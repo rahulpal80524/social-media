@@ -1,0 +1,55 @@
+.app-container{
+  display: flex;
+}
+
+.content{
+  width: 100%;
+}
+
+.sidebar{
+  min-height: 800px;
+}
+
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 16px; /* Space between grid items */
+  padding: 16px; /* Padding around the grid container */
+}
+
+.card {
+  /* Ensure the card fits within its grid cell */
+  width: 100%; 
+  margin: 0; /* Remove default margin */
+
+  /* Ensure consistent padding inside the card */
+  padding: 16px; /* Adjust as needed for inner padding */
+
+  /* Additional styling for the card */
+  position: relative; /* For positioning the cancel button */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.cancel-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  color: red;
+}
+
